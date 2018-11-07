@@ -26,15 +26,18 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    width: 50%;
+    width: 60%;
     justify-self: center;
+    a > span {
+        display: none;
+    }
 }
 
 body > nav > div > a { 
     color: $color-icons;
     font-family: 'Noto Serif', serif;
     text-transform: uppercase;
-    font-size: 2em
+    font-size: 2em;
 }
 
 #page {
@@ -45,8 +48,32 @@ body > nav > div > a {
     width: 100%;
 }
 
-@media (min-width:600px) {
+@media (min-width:1200px) {
+
     #page {
         width: 70%
+    }
+    body > nav > div > a { 
+        font-size: 1.5em 
+    }
+    #nav-icons {
+        a > span {
+            display: inline;
+        }
+    }
+
+}
+
+@media (min-width:1600px) {
+    body > nav > div > a { 
+        font-size: 2em
+    }
+    a > span {
+        display: inline;
+    }
+    #nav-icons {
+        a > span {
+            display: inline;
+        }
     }
 }
