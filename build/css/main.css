@@ -33,12 +33,13 @@ body > nav > div > a {
 #page {
     margin: auto;
     background-color: #DCC7AA;
-    align-items: center;
     height: 500px;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-@media (min-width:1200px) {
+@media (min-width:1100px) {
 
     #page {
         width: 70%
