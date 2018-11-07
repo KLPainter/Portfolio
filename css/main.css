@@ -1,9 +1,52 @@
-$fa-color: #F7882F;
+$color-blueberry: #6B7A8F;
+$color-apricot: #F7882F;
+$color-citrus: #F7C331;
+$color-apple-core: #DCC7AA;
+$color-oxblood: #76323F;
+$color-blackboard: #565656;
+
+$color-icons: $color-citrus;
+$color-background: $color-blueberry;
+$color-page: $color-apple-core;
 
 /* font-family: 'Noto Serif', serif; */
 /* font-family: 'Noto Sans KR', sans-serif; */
 
+body {
+    background-color: $color-background;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+#nav-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 50%;
+    justify-self: center;
+}
+
 body > nav > div > a { 
-    color: $fa-color;
+    color: $color-icons;
     font-family: 'Noto Serif', serif;
+    text-transform: uppercase;
+    font-size: 2em
+}
+
+#page {
+    margin: auto;
+    background-color: $color-page;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+@media (min-width:600px) {
+    #page {
+        width: 70%
+    }
 }

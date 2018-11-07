@@ -1,7 +1,41 @@
 /* font-family: 'Noto Serif', serif; */
 /* font-family: 'Noto Sans KR', sans-serif; */
 
+body {
+    background-color: #6B7A8F;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+#nav-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 50%;
+    justify-self: center;
+}
+
 body > nav > div > a { 
-    color: #F7882F;
+    color: #F7C331;
     font-family: 'Noto Serif', serif;
+    text-transform: uppercase;
+    font-size: 2em
+}
+
+#page {
+    margin: auto;
+    background-color: #DCC7AA;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+@media (min-width:600px) {
+    #page {
+        width: 70%
+    }
 }
