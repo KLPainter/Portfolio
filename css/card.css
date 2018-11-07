@@ -1,6 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
 
+$color-blueberry: #6B7A8F;
+$color-apricot: #F7882F;
+$color-citrus: #F7C331;
+$color-apple-core: #DCC7AA;
+$color-oxblood: #76323F;
+$color-blackboard: #565656;
+
 $card-width:  500px;
 $card-height: 300px;
 $h-color:     #9CC9E3;
