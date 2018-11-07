@@ -1,0 +1,7 @@
+/* font-family: 'Noto Serif', serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+body > nav > div > a { 
+    color: #F7882F;
+    font-family: 'Noto Serif', serif;
+}
