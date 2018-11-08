@@ -24,7 +24,7 @@ form {
         margin-top: 10px;
     }
     input {
-        color: white;
+        color: $color-blackboard;
         /* background-color: $color-apple-core; */
         font-family: 'Noto Sans KR', sans-serif;
     }

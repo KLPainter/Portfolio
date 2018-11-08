@@ -20,7 +20,7 @@ form label {
     }
 
 form input {
-        color: white;
+        color: #565656;
         /* background-color: $color-apple-core; */
         font-family: 'Noto Sans KR', sans-serif;
     }
