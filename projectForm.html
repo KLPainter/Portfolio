@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./build/css/projectForm.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="name">Project Name</label>
+        <input type="text" name="name" id="name">
+
+        <label for="shortDesc">Summary</label>
+        <input type="text" name="shortDesc" id="shortDesc">
+
+        <label for="longDesc">Description</label>
+        <textarea name="longDesc" id="longDesc" rows="5"></textarea>
+
+        <label for="image">Image</label>
+        <input type="file" name="image" id="image">
+
+        <fieldset>
+            <legend>Project Type</legend>
+            <div>
+                <input type="radio" id="individual" name="projectType">
+                <label for="individual">Individual</label>
+            </div>
+            <div>
+                <input type="radio" id="group" name="projectType">
+                <label for="group">Group</label>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Technologies Used</legend>
+            <div>
+                <input type="checkbox" id="JavaScript" name="JavaScript">
+                <label for="">JavaScript</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Vue" name="Vue">
+                <label for="">Vue</label>
+            </div>
+            <div>
+                <input type="checkbox" id="React" name="React">
+                <label for="">React/Redux</label>
+            </div>
+            <div>
+                <input type="checkbox" id="MongoDb" name="MongoDb">
+                <label for="">MongoDb/Mongoose</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Node" name="Node">
+                <label for="">Node/Express</label> 
+            </div>
+        </fieldset>
+        
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>

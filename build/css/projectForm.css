@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif');
+/* font-family: 'Noto Serif', serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+form {
+    width: 50%; 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+        font-family: 'Noto Serif', serif; 
+        margin-top: 10px;
+    }
+
+form input {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+form fieldset {
+        margin-top: 10px;
+    }
+
+form fieldset legend {
+            font-size: 1.2em;
+        }
+
+form fieldset label {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+form textarea {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+#submit {
+    margin-top: 10px;
+    width: 100px;
+}
