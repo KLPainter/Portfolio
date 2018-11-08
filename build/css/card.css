@@ -1,11 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif');
+/* font-family: 'Noto Serif', serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 
 body {
   background: #323c41;
@@ -25,7 +27,7 @@ body {
 }
 
 .blog-card.spring-fever{
-    background: url(../images/whack-a-mole.JPG) no-repeat;
+    background: url("/images/whack-a-mole.JPG") no-repeat;
   }
 
 .blog-card .color-overlay{
@@ -74,7 +76,7 @@ h3{
   font-weight: 500;
   letter-spacing: 2px;
   color: #9CC9E3;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   margin-bottom: 0;
 }
 hr{
@@ -88,7 +90,7 @@ hr{
   width: 170px;
   margin: 0 auto;
   color: #DCE3E7;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Noto Serif', serif;
   font-size: 13px;
   font-style: italic;
   line-height: 18px;
@@ -101,7 +103,7 @@ hr{
   margin: 0 auto;
   padding: 0 50px;
   color: #DCE3E7;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Noto Serif', serif;
   font-style: 16px;
   line-height: 24px;
   z-index: 20;
@@ -126,7 +128,7 @@ hr{
     padding: 0 0 0 22px;
     display: inline-block;
     color: #DCE3E7;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
   }
 .utility-list li.comments{
       background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-chat.svg) no-repeat 0 .1em;
