@@ -9,6 +9,10 @@ $color-apple-core: #DCC7AA;
 $color-oxblood: #76323F;
 $color-blackboard: #565656;
 
+body {
+    background-color: $color-blueberry;
+}
+
 form {
     width: 50%; 
     margin: auto;
@@ -20,6 +24,8 @@ form {
         margin-top: 10px;
     }
     input {
+        color: white;
+        /* background-color: $color-apple-core; */
         font-family: 'Noto Sans KR', sans-serif;
     }
 

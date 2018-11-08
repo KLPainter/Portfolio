@@ -2,6 +2,10 @@
 /* font-family: 'Noto Serif', serif; */
 /* font-family: 'Noto Sans KR', sans-serif; */
 
+body {
+    background-color: #6B7A8F;
+}
+
 form {
     width: 50%; 
     margin: auto;
@@ -16,6 +20,8 @@ form label {
     }
 
 form input {
+        color: white;
+        /* background-color: $color-apple-core; */
         font-family: 'Noto Sans KR', sans-serif;
     }
 
