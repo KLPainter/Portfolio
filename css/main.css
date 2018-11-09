@@ -17,11 +17,58 @@ body {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    width: 60%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: [home] 1fr [projects] 1fr [about] 1fr [contact] 1fr;
+    grid-template-rows: auto [visible-line] 50px [hidden-line] 50px auto;
+    *{
+        border: 1px solid red;
+    }
 }
 
-#nav-icons {
+#pointer-home {
+    grid-column-start: home;
+    &.revealed {
+        grid-row-start: visible-line;
+    }
+    &.hidden {
+        grid-row-start: hidden-line;
+    }
+}
+
+#pointer-projects {
+    grid-column-start: projects;
+    &.revealed {
+        grid-row-start: visible-line;
+    }
+    &.hidden {
+        grid-row-start: hidden-line;
+    }
+}
+
+#pointer-about {
+    grid-column-start: about;
+    &.revealed {
+        grid-row-start: visible-line;
+    }
+    &.hidden {
+        grid-row-start: hidden-line;
+    }
+}
+
+#pointer-contact {
+    grid-column-start: contact;
+    &.revealed {
+        grid-row-start: visible-line;
+    }
+    &.hidden {
+        grid-row-start: hidden-line;
+    }
+}
+
+/* #nav-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,28 +81,34 @@ nav {
             display: none;
         }
     }
+} */
+
+main {
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
 }
 
 iframe {
-    margin: auto;
     height: fit-content;
     width: 100%;
     overflow: hidden;
     border: 0;
 }
 
-body > nav > div > a { 
+body > nav > a { 
     color: $color-icons;
     font-family: 'Noto Serif', serif;
     text-transform: uppercase;
     font-size: 2em;
 }
 
-
-
 @media (min-width:1100px) {
-    body > nav > div > a { 
+    body > nav > a { 
         font-size: 1.5em 
+    }
+    iframe {
+        width: 70%;
     }
     #nav-icons {
         a > span {
@@ -65,7 +118,7 @@ body > nav > div > a {
 }
 
 @media (min-width:1600px) {
-    body > nav > div > a { 
+    body > nav > a { 
         font-size: 2em
     }
 }

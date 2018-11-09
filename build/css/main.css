@@ -7,29 +7,88 @@ body {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    width: 60%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: [home] 1fr [projects] 1fr [about] 1fr [contact] 1fr;
+    grid-template-rows: auto [visible-line] 50px [hidden-line] 50px auto;
 }
 
-#nav-icons {
+nav *{
+        border: 1px solid red;
+    }
+
+#pointer-home {
+    grid-column-start: home;
+}
+
+#pointer-home.revealed {
+        grid-row-start: visible-line;
+    }
+
+#pointer-home.hidden {
+        grid-row-start: hidden-line;
+    }
+
+#pointer-projects {
+    grid-column-start: projects;
+}
+
+#pointer-projects.revealed {
+        grid-row-start: visible-line;
+    }
+
+#pointer-projects.hidden {
+        grid-row-start: hidden-line;
+    }
+
+#pointer-about {
+    grid-column-start: about;
+}
+
+#pointer-about.revealed {
+        grid-row-start: visible-line;
+    }
+
+#pointer-about.hidden {
+        grid-row-start: hidden-line;
+    }
+
+#pointer-contact {
+    grid-column-start: contact;
+}
+
+#pointer-contact.revealed {
+        grid-row-start: visible-line;
+    }
+
+#pointer-contact.hidden {
+        grid-row-start: hidden-line;
+    }
+
+/* #nav-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100px;
     width: 60%;
     justify-self: center;
-}
-
-#nav-icons a {
+    a {
         text-decoration: none;
-    }
-
-#nav-icons a span {
+        span {
             display: none;
         }
+    }
+} */
+
+main {
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
 
 iframe {
-    margin: auto;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -38,18 +97,19 @@ iframe {
     border: 0;
 }
 
-body > nav > div > a { 
+body > nav > a { 
     color: #F7C331;
     font-family: 'Noto Serif', serif;
     text-transform: uppercase;
     font-size: 2em;
 }
 
-
-
 @media (min-width:1100px) {
-    body > nav > div > a { 
+    body > nav > a { 
         font-size: 1.5em 
+    }
+    iframe {
+        width: 70%;
     }
         #nav-icons a > span {
             display: inline;
@@ -57,7 +117,7 @@ body > nav > div > a {
 }
 
 @media (min-width:1600px) {
-    body > nav > div > a { 
+    body > nav > a { 
         font-size: 2em
     }
 }

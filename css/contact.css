@@ -8,3 +8,13 @@ $color-citrus: #F7C331;
 $color-apple-core: #DCC7AA;
 $color-oxblood: #76323F;
 $color-blackboard: #565656;
+
+$body-color: $color-apple-core;
+$text-color: $color-blackboard;
+
+body {
+    background-color: $body-color;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: $text-color;
+    height: 200px;
+}
