@@ -20,9 +20,23 @@ nav {
     justify-self: center;
 }
 
-#nav-icons a > span {
-        display: none;
+#nav-icons a {
+        text-decoration: none;
     }
+
+#nav-icons a span {
+            display: none;
+        }
+
+iframe {
+    margin: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+    border: 0;
+}
 
 body > nav > div > a { 
     color: #F7C331;
@@ -31,23 +45,9 @@ body > nav > div > a {
     font-size: 2em;
 }
 
-#page {
-    margin: auto;
-    background-color: #DCC7AA;
-    height: 500px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
 
-#page div {
-        border-style: dotted;
-    }
 
 @media (min-width:1100px) {
-    #page {
-        width: 70%
-    }
     body > nav > div > a { 
         font-size: 1.5em 
     }
