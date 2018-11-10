@@ -12,78 +12,97 @@ nav {
     display: grid;
     text-align: center;
     grid-template-columns: [home] 1fr [projects] 1fr [about] 1fr [contact] 1fr;
-    grid-template-rows: auto [visible-line] 50px [hidden-line] 50px auto;
+    grid-template-rows: auto [visible-line] 200px [hidden-line] 100px auto;
 }
 
 nav *{
-        border: 1px solid red;
+         /* border: 1px solid red;  */
+    }
+
+@-webkit-keyframes rise {
+    0%   { bottom: 0px; }
+    10%  { bottom: 10px; }
+    20%  { bottom: 20px; }
+    30%  { bottom: 30px; }
+    40%  { bottom: 40px; }
+    50%  { bottom: 50px; }
+    60%  { bottom: 60px; }
+    70%  { bottom: 70px; }
+    80%  { bottom: 80px; }
+    90%  { bottom: 90px; }
+    100% { bottom: 100px; }
+}
+
+@keyframes rise {
+    0%   { bottom: 0px; }
+    10%  { bottom: 10px; }
+    20%  { bottom: 20px; }
+    30%  { bottom: 30px; }
+    40%  { bottom: 40px; }
+    50%  { bottom: 50px; }
+    60%  { bottom: 60px; }
+    70%  { bottom: 70px; }
+    80%  { bottom: 80px; }
+    90%  { bottom: 90px; }
+    100% { bottom: 100px; }
+}
+
+#pointer-home, #pointer-projects, #pointer-about, #pointer-contact {
+    /* border: 1px solid blue; */
+    position: relative;
+}
+
+.pointer {
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    background-color: #DCC7AA;
+    height: 40px;
+    width: 40px;
+    display: block;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); 
+    -webkit-animation-name: rise; 
+            animation-name: rise;
+    -webkit-animation-duration: 500ms;
+            animation-duration: 500ms;
+    /* animation-direction: reverse; */
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+.pointer.visible {
+        -webkit-animation-direction: forward;
+                animation-direction: forward;
+        /* grid-row-start: visible-line; */
+    }
+
+.pointer.hidden {
+        animation-direction: reverse;
+        /* grid-row-start: hidden-line; */
     }
 
 #pointer-home {
     grid-column-start: home;
 }
 
-#pointer-home.revealed {
-        grid-row-start: visible-line;
-    }
-
-#pointer-home.hidden {
-        grid-row-start: hidden-line;
-    }
-
 #pointer-projects {
     grid-column-start: projects;
 }
-
-#pointer-projects.revealed {
-        grid-row-start: visible-line;
-    }
-
-#pointer-projects.hidden {
-        grid-row-start: hidden-line;
-    }
 
 #pointer-about {
     grid-column-start: about;
 }
 
-#pointer-about.revealed {
-        grid-row-start: visible-line;
-    }
-
-#pointer-about.hidden {
-        grid-row-start: hidden-line;
-    }
-
 #pointer-contact {
     grid-column-start: contact;
 }
 
-#pointer-contact.revealed {
-        grid-row-start: visible-line;
-    }
-
-#pointer-contact.hidden {
-        grid-row-start: hidden-line;
-    }
-
-/* #nav-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    width: 60%;
-    justify-self: center;
-    a {
-        text-decoration: none;
-        span {
-            display: none;
-        }
-    }
-} */
-
 main {
-    margin-top: -50px;
+    margin-top: -250px;
     display: flex;
     justify-content: center;
 }
@@ -97,11 +116,18 @@ iframe {
     border: 0;
 }
 
-body > nav > a { 
+a { 
     color: #F7C331;
     font-family: 'Noto Serif', serif;
     text-transform: uppercase;
+    text-decoration: none;
     font-size: 2em;
+}
+
+a:hover {
+    font-size: 1.6em;
+    transition: font-size 500ms;
+    transition-timing-function: ease-in-out;
 }
 
 @media (min-width:1100px) {

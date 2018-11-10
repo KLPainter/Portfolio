@@ -10,17 +10,18 @@
 </head>
 <body>
     <nav>
-        <a href="html/launch.html" target="iframe"><i class="fas fa-smile"></i><span> Home</span></a>
-        <a href="html/projects.html" target="iframe"><i class="fas fa-folder-open"></i><span> Projects</span></a>
-        <a href="html/about.html" target="iframe"><i class="fas fa-address-card"></i><span> About Me</span></a>
-        <a href="html/contact.html" target="iframe"><i class="fas fa-envelope"></i><span> Contact</span></a>
-        <span id="pointer-home" class="revealed">arrow1</span>
-        <span id="pointer-projects" class="hidden">arrow2</span>
-        <span id="pointer-about" class="hidden">arrow3</span>
-        <span id="pointer-contact" class="hidden">arrow4</span>
+        <a href="html/launch.html" target="iframe" onclick="switchPointers('home')"><i class="fas fa-smile"></i><span> Home</span></a>
+        <a href="html/projects.html" target="iframe" onclick="switchPointers('projects')"><i class="fas fa-folder-open"></i><span> Projects</span></a>
+        <a href="html/about.html" target="iframe" onclick="switchPointers('about')"><i class="fas fa-address-card"></i><span> About</span></a>
+        <a href="html/contact.html" target="iframe" onclick="switchPointers('contact')"><i class="fas fa-envelope"></i><span> Contact</span></a>
+        <div id="pointer-home"><span id="span-home" class="pointer visible"></span></div>
+        <div id="pointer-projects"><span id="span-projects" class="pointer hidden"></span></div>
+        <div id="pointer-about"><span id="span-about" class="pointer hidden"></span></div>
+        <div id="pointer-contact"><span id="span-contact" class="pointer hidden"></span></div>
     </nav>
+
     <main>
-        <iframe src="projectForm.html" name="iframe" scrolling="no" onload="resizeIframe(this)"></iframe>
+        <iframe src="html/launch.html" name="iframe" scrolling="no" onload="resizeIframe(this)"></iframe>
     </main>
 </body>
 </html>
