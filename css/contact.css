@@ -13,10 +13,11 @@ $body-color: $color-apple-core;
 $text-color: $color-blackboard;
 
 body {
+    padding: 10px;
     background-color: $body-color;
     font-family: 'Noto Sans KR', sans-serif;
     color: $text-color;
-    height: 200px;
+    /* height: 400px; */
     opacity: 0;
     animation: 1s ease-in 0s 1 normal forwards fadeIn;
 }
@@ -28,4 +29,43 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+form {
+    float: right;
+    width: 100%; 
+    height: 400px;
+    margin: auto;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    label {
+        font-family: 'Noto Serif', serif; 
+        margin-top: 10px;
+    }
+    input {
+        color: $color-blackboard;
+        /* background-color: $color-apple-core; */
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    fieldset {
+        margin-top: 10px;
+        legend {
+            font-size: 1.2em;
+        }
+        label {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    }
+
+    textarea {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+}
+
+
+#submit {
+    margin-top: 10px;
+    width: 100px;
 }

@@ -23,7 +23,7 @@ nav {
     display: grid;
     text-align: center;
     grid-template-columns: [home] 1fr [projects] 1fr [about] 1fr [contact] 1fr;
-    grid-template-rows: auto [visible-line] 200px [hidden-line] 100px auto;
+    grid-template-rows: 50px [visible-line] 200px [hidden-line] 100px auto;
     *{
          /* border: 1px solid red;  */
     }
@@ -107,6 +107,7 @@ a {
     color: $color-icons;
     font-family: 'Noto Serif', serif;
     text-transform: uppercase;
+    align-self: end;
     text-decoration: none;
     font-size: 2em;
     span {
@@ -114,17 +115,17 @@ a {
     }
 }
 
-a:hover {
-    font-size: 1.6em;
-    transition: font-size 500ms;
-    transition-timing-function: ease-in-out;
-}
 
 @media (min-width:1100px) {
     a { 
         font-size: 1.5em;
         span {
             display: inline;
+        }
+        &:hover {
+            font-size: 1.6em;
+            transition: font-size 500ms;
+            transition-timing-function: ease-in-out;
         }
     }
     iframe {
@@ -135,5 +136,10 @@ a:hover {
 @media (min-width:1600px) {
     a { 
         font-size: 2em
+    }
+    a:hover {
+        font-size: 2.1em;
+        /* transition: font-size 500ms;
+        transition-timing-function: ease-in-out; */
     }
 }
