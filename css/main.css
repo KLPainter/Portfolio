@@ -55,6 +55,7 @@ nav {
     bottom: 0px;
     left: 0;
     background-color: $color-arrows;
+    z-index: -1;
     height: 40px;
     width: 40px;
     display: block;
@@ -62,7 +63,6 @@ nav {
     transform: rotate(45deg); 
     animation-name: rise;
     animation-duration: 500ms;
-    /* animation-direction: reverse; */
     animation-fill-mode: forwards;
     &.visible {
         animation-direction: forward;
@@ -109,6 +109,9 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 2em;
+    span {
+       display: none; 
+    }
 }
 
 a:hover {
@@ -118,21 +121,19 @@ a:hover {
 }
 
 @media (min-width:1100px) {
-    body > nav > a { 
-        font-size: 1.5em 
+    a { 
+        font-size: 1.5em;
+        span {
+            display: inline;
+        }
     }
     iframe {
         width: 70%;
     }
-    #nav-icons {
-        a > span {
-            display: inline;
-        }
-    }
 }
 
 @media (min-width:1600px) {
-    body > nav > a { 
+    a { 
         font-size: 2em
     }
 }
