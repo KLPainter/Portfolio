@@ -8,8 +8,9 @@ body {
     color: #565656;
     height: 200px;
     opacity: 0;
-    -webkit-animation: 1s ease-in 0s 1 normal forwards fadeIn;
-            animation: 1s ease-in 0s 1 normal forwards fadeIn;
+    -webkit-animation: 750ms ease-in 0s 1 normal forwards fadeIn;
+            animation: 750ms ease-in 0s 1 normal forwards fadeIn;
+    padding: 10px;
 }
 
 @-webkit-keyframes fadeIn {
@@ -28,4 +29,9 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+img {
+    width: 300px;
+    float: right;
 }

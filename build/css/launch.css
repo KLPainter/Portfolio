@@ -3,14 +3,26 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 body {
+    padding: 0px;
     background-color: #DCC7AA;
     font-family: 'Noto Sans KR', sans-serif;
     color: #565656;
-    height: 200px;
     opacity: 0;
-    -webkit-animation: 1s ease-in 0s 1 normal forwards fadeIn;
-            animation: 1s ease-in 0s 1 normal forwards fadeIn;
+    -webkit-animation: 750ms ease-in 0s 1 normal forwards fadeIn;
+            animation: 750ms ease-in 0s 1 normal forwards fadeIn;
+    display: grid;
+    grid-template-columns: 1 fr;
 }
+
+body div {
+        align-self: center;
+        justify-self: center;
+    }
+
+body img {
+        align-self:  center;
+        justify-self: center;
+    }
 
 @-webkit-keyframes fadeIn {
     0% {
@@ -30,7 +42,12 @@ body {
     }
 }
 
-img {
-    width: 400px;
-    float: right;
+@media (min-width: 700px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+    }
+        body img {
+            justify-self: end;
+        }
+
 }

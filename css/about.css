@@ -18,7 +18,8 @@ body {
     color: $text-color;
     height: 200px;
     opacity: 0;
-    animation: 1s ease-in 0s 1 normal forwards fadeIn;
+    animation: 750ms ease-in 0s 1 normal forwards fadeIn;
+    padding: 10px;
 }
 
 @keyframes fadeIn {
@@ -28,4 +29,9 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+img {
+    width: 300px;
+    float: right;
 }

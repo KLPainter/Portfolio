@@ -13,12 +13,22 @@ $body-color: $color-apple-core;
 $text-color: $color-blackboard;
 
 body {
+    padding: 0px;
     background-color: $body-color;
     font-family: 'Noto Sans KR', sans-serif;
     color: $text-color;
-    height: 200px;
     opacity: 0;
-    animation: 1s ease-in 0s 1 normal forwards fadeIn;
+    animation: 750ms ease-in 0s 1 normal forwards fadeIn;
+    display: grid;
+    grid-template-columns: 1 fr;
+    div {
+        align-self: center;
+        justify-self: center;
+    }
+    img {
+        align-self:  center;
+        justify-self: center;
+    }
 }
 
 @keyframes fadeIn {
@@ -30,7 +40,12 @@ body {
     }
 }
 
-img {
-    width: 400px;
-    float: right;
+@media (min-width: 700px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+        img {
+            justify-self: end;
+        }
+    }
+
 }

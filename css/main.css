@@ -94,6 +94,7 @@ main {
     margin-top: -250px;
     display: flex;
     justify-content: center;
+    background-color: $color-background; /* hides pointers on frame change */
 }
 
 iframe {
@@ -139,7 +140,5 @@ a {
     }
     a:hover {
         font-size: 2.1em;
-        /* transition: font-size 500ms;
-        transition-timing-function: ease-in-out; */
     }
 }
