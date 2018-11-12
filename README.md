@@ -7,5 +7,7 @@ The beginnings of a site to showcase my *stunning* talents as a web developer.
 Navigation bar based on codepen from mJordan.
 https://codepen.io/mjordancodes/pen/mpLXja
 
-Card design based on codepen from szpakoli.
-https://codepen.io/szpakoli/pen/xbJjdR
+Inspired by (but not copied from):
+https://html5up.net/astral
+
+**Additional thanks to mJordan for generously sharing her time and wizardry.**
