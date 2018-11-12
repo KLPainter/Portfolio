@@ -13,7 +13,7 @@ $body-color: $color-apple-core;
 $text-color: $color-blackboard;
 
 body {
-    padding: 5px;
+    padding: 10px;
     background-color: $body-color;
     font-family: 'Noto Sans KR', sans-serif;
     color: $text-color;
