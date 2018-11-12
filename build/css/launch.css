@@ -3,18 +3,23 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 body {
-    padding: 0px;
     background-color: #DCC7AA;
     font-family: 'Noto Sans KR', sans-serif;
     color: #565656;
     opacity: 0;
     -webkit-animation: 750ms ease-in 0s 1 normal forwards fadeIn;
             animation: 750ms ease-in 0s 1 normal forwards fadeIn;
-    display: grid;
-    grid-template-columns: 1 fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 body div {
+        /* border: 1px solid black; */
+        /* width: 50%; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         align-self: center;
         justify-self: center;
     }
@@ -22,6 +27,10 @@ body div {
 body img {
         align-self:  center;
         justify-self: center;
+    }
+
+body h1, body h2 {
+        margin: 5px;
     }
 
 @-webkit-keyframes fadeIn {
@@ -44,10 +53,10 @@ body img {
 
 @media (min-width: 700px) {
     body {
-        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
     }
-        body img {
-            justify-self: end;
+        body div {
+            width: 50%;
         }
 
 }

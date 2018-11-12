@@ -34,4 +34,5 @@ body {
 img {
     width: 300px;
     float: right;
+    padding: 15px;
 }

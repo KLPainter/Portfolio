@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Karen Painter, software developer with 19 years of experience.">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="/build/css/main.css">
     <title>Karen Painter</title>
 </head>
 <body>
     <nav>
-        <a href="html/launch.html" target="iframe" onclick="switchPointers('home')"><i class="fas fa-smile"></i><span> Home</span></a>
-        <a href="html/projects.html" target="iframe" onclick="switchPointers('projects')"><i class="fas fa-folder-open"></i><span> Projects</span></a>
-        <a href="html/about.html" target="iframe" onclick="switchPointers('about')"><i class="fas fa-address-card"></i><span> About</span></a>
-        <a href="html/contact.html" target="iframe" onclick="switchPointers('contact')"><i class="fas fa-envelope"></i><span> Contact</span></a>
+        <a href="html/launch.html" aria-label="home" target="iframe" onclick="switchPointers('home')"><i class="fas fa-smile"></i><span> Home</span></a>
+        <a href="html/projects.html" aria-label="projects" target="iframe" onclick="switchPointers('projects')"><i class="fas fa-folder-open"></i><span> Projects</span></a>
+        <a href="html/about.html" aria-label="about" target="iframe" onclick="switchPointers('about')"><i class="fas fa-address-card"></i><span> About</span></a>
+        <a href="html/contact.html" aria-label="contact" target="iframe" onclick="switchPointers('contact')"><i class="fas fa-envelope"></i><span> Contact</span></a>
         <div id="pointer-home"><span id="span-home" class="pointer visible"></span></div>
         <div id="pointer-projects"><span id="span-projects" class="pointer hidden"></span></div>
         <div id="pointer-about"><span id="span-about" class="pointer hidden"></span></div>
@@ -21,7 +22,7 @@
     </nav>
 
     <main>
-        <iframe src="html/launch.html" name="iframe" scrolling="no" onload="resizeIframe(this)"></iframe>
+        <iframe src="html/launch.html" title="content" name="iframe" scrolling="no" onload="resizeIframe(this)"></iframe>
     </main>
 </body>
 </html>

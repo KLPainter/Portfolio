@@ -13,6 +13,7 @@ $body-color: $color-apple-core;
 $text-color: $color-blackboard;
 
 body {
+    padding: 5px;
     background-color: $body-color;
     font-family: 'Noto Sans KR', sans-serif;
     color: $text-color;
@@ -32,13 +33,31 @@ body {
 
 #page {
     margin: auto;
-    background-color: white;
+    background-color: $body-color;
     height: 500px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    div {
-        border-style: dotted;
-    }
 }
 
+.card {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.content {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  .title {
+      font-size: 1.5em;
+  }
+  .description {
+      font-size: 1em;
+  }
+}

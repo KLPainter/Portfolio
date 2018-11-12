@@ -14,6 +14,7 @@ $color-background: $color-blueberry;
 $color-arrows: $color-apple-core;
 
 body {
+    margin: 0px;
     background-color: $color-background;
 }
 
@@ -23,7 +24,7 @@ nav {
     display: grid;
     text-align: center;
     grid-template-columns: [home] 1fr [projects] 1fr [about] 1fr [contact] 1fr;
-    grid-template-rows: 50px [visible-line] 200px [hidden-line] 100px auto;
+    grid-template-rows: 70px [visible-line] 200px [hidden-line] 100px auto;
     *{
          /* border: 1px solid red;  */
     }
@@ -44,7 +45,6 @@ nav {
 }
 
 #pointer-home, #pointer-projects, #pointer-about, #pointer-contact {
-    /* border: 1px solid blue; */
     position: relative;
 }
 
@@ -61,15 +61,18 @@ nav {
     display: block;
     position: absolute;
     transform: rotate(45deg); 
-    animation-name: rise;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
     &.visible {
+        animation-name: rise;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
         animation-direction: forward;
         /* grid-row-start: visible-line; */
     }
     &.hidden {
-        animation-direction: reverse;
+        /* animation-name: rise;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+        animation-direction: reverse; */
         /* grid-row-start: hidden-line; */
     }
 }

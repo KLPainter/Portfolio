@@ -13,21 +13,29 @@ $body-color: $color-apple-core;
 $text-color: $color-blackboard;
 
 body {
-    padding: 0px;
     background-color: $body-color;
     font-family: 'Noto Sans KR', sans-serif;
     color: $text-color;
     opacity: 0;
     animation: 750ms ease-in 0s 1 normal forwards fadeIn;
-    display: grid;
-    grid-template-columns: 1 fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     div {
+        /* border: 1px solid black; */
+        /* width: 50%; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         align-self: center;
         justify-self: center;
     }
     img {
         align-self:  center;
         justify-self: center;
+    }
+    h1, h2 {
+        margin: 5px;
     }
 }
 
@@ -42,9 +50,9 @@ body {
 
 @media (min-width: 700px) {
     body {
-        grid-template-columns: 1fr 1fr;
-        img {
-            justify-self: end;
+        flex-direction: row;
+        div {
+            width: 50%;
         }
     }
 
